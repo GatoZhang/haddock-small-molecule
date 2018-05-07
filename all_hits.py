@@ -194,7 +194,7 @@ if __name__ == '__main__':
 
 			energy_terms = matrix[:, [2,3,4,5,6]]
 			
-			all_hits.append(cal_max_acc(matrix[:,0], 1000))
+			all_hits.append(cal_max_acc(matrix[:,0], matrix.shape[0]))
 			level_hits = count_hits(energy_terms, matrix[:,0], [combinations[0,n], combinations[1,n], combinations[2,n], combinations[3,n]])
 			
 			#One docking case with all weights combinations
